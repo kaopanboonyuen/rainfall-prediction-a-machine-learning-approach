@@ -1,30 +1,41 @@
 # Advanced Machine Learning Techniques for Accurate Rainfall Prediction
 
-Welcome to the repository for **"Advanced Machine Learning Techniques for Accurate Rainfall Prediction"**. This project, developed by Teerapong Panboonyuen (Kao Panboonyuen), focuses on leveraging state-of-the-art machine learning models to enhance the accuracy of rainfall predictions.
+## Authors
+Teerapong Panboonyuen (also known as Kao Panboonyuen)
 
-## Our Recent Publication
-
-We are pleased to share our recent publication: **"A Performance Comparison between GIS-based and Neuron Network Methods for Flood Susceptibility Assessment in Ayutthaya Province"**. You can access the full paper [here](https://tis.wu.ac.th/index.php/tis/article/view/2038).
+## Overview
+This repository contains the implementation of advanced machine learning techniques for accurate rainfall prediction. The project explores various machine learning models, including Random Forest, Gradient Boosting, and Neural Networks, to develop a predictive model for rainfall using relevant features from the dataset.
 
 ![](paper_result.png)
 
+## Dataset
+**Note:** You must have permission from Geo-Informatics and Space Technology Development Agency (GISTDA Thailand) to access the dataset used in this project. The dataset is not provided in this repository due to its private nature.
+
+## Publication
+Our research is published in the following paper:
+
+- **Title:** A Performance Comparison between GIS-based and Neuron Network Methods for Flood Susceptibility Assessment in Ayutthaya Province
+- **Authors:** Thanat Vajeethaveesin, Teerapong Panboonyuen
+- **Journal:** Trends in Sciences, Volume 19, Number 2, Pages 2038-2038, Year 2022
+- **Link:** [A Performance Comparison between GIS-based and Neuron Network Methods for Flood Susceptibility Assessment in Ayutthaya Province](https://tis.wu.ac.th/index.php/tis/article/view/2038)
+
 ### Abstract
+Flooding has been a long-standing issue in Thailand. Due to its geographical setup, mitigation and management of floods are challenging and hard to execute. One of the tools used in managing the events is “flood susceptibility mapping,” in which an incident probability as well as a rescue path is estimated and planned. 
 
-Flooding has been a longstanding issue in Thailand. Due to its geographical setup, mitigation and management of floods are challenging and hard to execute. One of the tools used in managing these events is “flood susceptibility mapping,” which estimates incident probabilities and plans rescue paths.
+To create one, the traditional GIS method called FRAM (flood risk assessment model), combined with AHP (analytical hierarchy process), is used and implemented on ArcGIS software. In this method, we first created a comparison table to compute weights for each of the selected factors. Then the computed weights were used in the FRAM model in ArcGIS to create a flood susceptibility map for each region. Each region was then classified as very high, high, medium, low, and very low risk. 
 
-To create such maps, the traditional GIS method called FRAM (Flood Risk Assessment Model), combined with AHP (Analytical Hierarchy Process), is used and implemented on ArcGIS software. In this method, we first created a comparison table to compute weights for each of the selected factors. Then, these weights were used in the FRAM model within ArcGIS to create a flood susceptibility map for each region, classifying areas into five risk levels: very high, high, medium, low, and very low.
+On the other hand, in computer science, machine learning and AI are prevalent and being adopted in various domains, promising the effectiveness of the method, potentially beating the aforementioned traditional method. Therefore, ANN (artificial neural network) is adopted in this work to create the flood susceptibility map. The ANN technique is developed by using causal factors. The ANN classifies areas as either flood areas or flood-free areas.
 
-In contrast, the field of computer science has seen a rise in the adoption of machine learning and AI across various domains, promising enhanced effectiveness. In this work, we applied an Artificial Neural Network (ANN) to create the flood susceptibility map, classifying areas as either flood-prone or flood-free. This study compares the traditional GIS-based method with the ANN approach, using data from Thailand’s Ayutthaya Province as a case study to evaluate flood-prone areas.
+The two methods from different disciplines (GIS and Computer Science) are applied and described in this paper with the intention to prove whether machine learning is really efficient and can outperform the traditional GIS approach. Data on Thailand’s Ayutthaya Province is used in this work as a case study - in order to assess flood-prone areas and compare for performance evaluation. 
 
-Both methods used six selected factors from the literature: (i) flow accumulation, (ii) elevation, (iii) land use, (iv) rainfall intensity, (v) slope, and (vi) soil types. The results were verified with historical flood data and compared. Our findings indicate that ANN outperformed the FRAM method, achieving a precision of 79.90%, recall of 79.04%, F1-score of 79.08%, and accuracy of 79.31%. Furthermore, sensitivity analysis revealed that only three factors—flow accumulation, elevation, and soil types—were crucial in predicting flood susceptibility. Thus, this simplified methodology could be applied to other regions where similar assessments are required.
+Both of which use the 6 selected factors according to the literature: (i) flow accumulation, (ii) elevation, (iii) land use, (iv) rainfall intensity, (v) slope, and (vi) soil types. The results from the two methods were verified with historical flood data and compared. The results showed that ANN (obtained via sensitivity analysis) outperformed the FRAM with a precision of 79.90 %, recall of 79.04 %, F1-score of 79.08 %, and accuracy of 79.31 %. 
 
-### Citation
+In addition, we found that (according to our ANN experiments) the main causal factors related to the flood susceptibility map only included 3 factors: flow accumulation, elevation, and soil types. Therefore, the proposed methodology for the assessment of flood susceptibility areas using these 3 factors could be considered sufficient and applied to other regions in related applications when needed.
 
-If you use our work, please cite it using the following BibTeX entry:
-
+### Citation (BibTeX)
 ```bibtex
 @article{vajeethaveesin2022performance,
-  title={A performance comparison between GIS-based and neuron network methods for flood susceptibility assessment in ayutthaya province},
+  title={A performance comparison between GIS-based and neuron network methods for flood susceptibility assessment in Ayutthaya Province},
   author={Vajeethaveesin, Thanat and Panboonyuen, Teerapong},
   journal={Trends in Sciences},
   volume={19},
@@ -34,59 +45,25 @@ If you use our work, please cite it using the following BibTeX entry:
 }
 ```
 
-## Overview
+## Getting Started
+To run the models in this project, follow these steps:
 
-Accurate rainfall prediction is crucial for various sectors, including agriculture, water resource management, and disaster preparedness. This project explores a range of machine learning algorithms to improve the precision and reliability of rainfall forecasts. By comparing traditional methods with advanced models, this work aims to demonstrate the potential of machine learning in meteorological applications.
-
-## Features
-
-- **Data Preprocessing**: Handling missing data, normalization, and feature engineering.
-- **Model Implementation**: Includes implementations of various machine learning models such as Random Forest, Gradient Boosting, and Neural Networks.
-- **Evaluation**: Rigorous performance evaluation using metrics like RMSE, MAE, and R².
-- **Visualization**: Graphical representation of results for better interpretation and analysis.
-
-## Installation
-
-Clone this repository to your local machine:
-
-```bash
-git clone https://github.com/kaopanboonyuen/rainfall-prediction-a-machine-learning-approach.git
-cd rainfall-prediction-a-machine-learning-approach
-```
-
-Install the required Python packages:
-
-```bash
-pip install -r requirements.txt
-```
-
-## Usage
-
-To start using the models and scripts, follow these steps:
-
-1. **Data Preparation**: Place your dataset in the `data/` directory.
-2. **Run the Model**: Execute the script for the desired model:
+1. **Clone the repository:**
    ```bash
-   python run_model.py --model random_forest
+   git clone https://github.com/kaopanboonyuen/rainfall-prediction-a-machine-learning-approach.git
+   cd rainfall-prediction-a-machine-learning-approach
    ```
-3. **Analyze Results**: View the output metrics and plots in the `results/` directory.
 
-## Contributing
+2. **Install dependencies:**
+   ```bash
+   pip install -r requirements.txt
+   ```
 
-Contributions are welcome! If you have suggestions for improvements or new features, please feel free to open an issue or submit a pull request.
+3. **Run the model:**
+   Since the dataset is private, you need to obtain it yourself. Once you have access, you can use the `run_model.py` script to train and evaluate the models:
+   ```bash
+   python run_model.py
+   ```
 
 ## License
-
-This project is licensed under the MIT License. See the `LICENSE` file for more details.
-
-## Contact
-
-For any inquiries or discussions, you can reach out to Teerapong Panboonyuen (Kao Panboonyuen) through GitHub.
-
-## Acknowledgments
-
-Special thanks to all collaborators and contributors who helped make this project possible.
-
----
-
-[View the Repository](https://github.com/kaopanboonyuen/rainfall-prediction-a-machine-learning-approach)
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
