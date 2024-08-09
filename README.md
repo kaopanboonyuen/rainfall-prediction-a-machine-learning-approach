@@ -2,6 +2,38 @@
 
 Welcome to the repository for **"Advanced Machine Learning Techniques for Accurate Rainfall Prediction"**. This project, developed by Teerapong Panboonyuen (Kao Panboonyuen), focuses on leveraging state-of-the-art machine learning models to enhance the accuracy of rainfall predictions.
 
+## Our Recent Publication
+
+We are pleased to share our recent publication: **"A Performance Comparison between GIS-based and Neuron Network Methods for Flood Susceptibility Assessment in Ayutthaya Province"**. You can access the full paper [here](https://tis.wu.ac.th/index.php/tis/article/view/2038).
+
+![](paper_result.png)
+
+### Abstract
+
+Flooding has been a longstanding issue in Thailand. Due to its geographical setup, mitigation and management of floods are challenging and hard to execute. One of the tools used in managing these events is “flood susceptibility mapping,” which estimates incident probabilities and plans rescue paths.
+
+To create such maps, the traditional GIS method called FRAM (Flood Risk Assessment Model), combined with AHP (Analytical Hierarchy Process), is used and implemented on ArcGIS software. In this method, we first created a comparison table to compute weights for each of the selected factors. Then, these weights were used in the FRAM model within ArcGIS to create a flood susceptibility map for each region, classifying areas into five risk levels: very high, high, medium, low, and very low.
+
+In contrast, the field of computer science has seen a rise in the adoption of machine learning and AI across various domains, promising enhanced effectiveness. In this work, we applied an Artificial Neural Network (ANN) to create the flood susceptibility map, classifying areas as either flood-prone or flood-free. This study compares the traditional GIS-based method with the ANN approach, using data from Thailand’s Ayutthaya Province as a case study to evaluate flood-prone areas.
+
+Both methods used six selected factors from the literature: (i) flow accumulation, (ii) elevation, (iii) land use, (iv) rainfall intensity, (v) slope, and (vi) soil types. The results were verified with historical flood data and compared. Our findings indicate that ANN outperformed the FRAM method, achieving a precision of 79.90%, recall of 79.04%, F1-score of 79.08%, and accuracy of 79.31%. Furthermore, sensitivity analysis revealed that only three factors—flow accumulation, elevation, and soil types—were crucial in predicting flood susceptibility. Thus, this simplified methodology could be applied to other regions where similar assessments are required.
+
+### Citation
+
+If you use our work, please cite it using the following BibTeX entry:
+
+```bibtex
+@article{vajeethaveesin2022performance,
+  title={A performance comparison between GIS-based and neuron network methods for flood susceptibility assessment in ayutthaya province},
+  author={Vajeethaveesin, Thanat and Panboonyuen, Teerapong},
+  journal={Trends in Sciences},
+  volume={19},
+  number={2},
+  pages={2038--2038},
+  year={2022}
+}
+```
+
 ## Overview
 
 Accurate rainfall prediction is crucial for various sectors, including agriculture, water resource management, and disaster preparedness. This project explores a range of machine learning algorithms to improve the precision and reliability of rainfall forecasts. By comparing traditional methods with advanced models, this work aims to demonstrate the potential of machine learning in meteorological applications.
