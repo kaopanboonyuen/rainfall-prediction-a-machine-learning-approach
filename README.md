@@ -46,8 +46,8 @@ Flooding remains a significant challenge in Thailand due to its geographical set
 
 ### 1. **Clone the Repository**
 ```bash
-git clone https://github.com/kaopanboonyuen/rainfall-prediction-ml.git
-cd rainfall-prediction-ml
+git clone https://github.com/kaopanboonyuen/rainfall-prediction-a-machine-learning-approach.git
+cd rainfall-prediction-a-machine-learning-approach
 ```
 
 ### 2. **Install Dependencies**
@@ -63,5 +63,13 @@ python run_model.py
 
 ---
 
+## 🛠️ **Code Repository**
+The full codebase for this project can be found [here](https://github.com/kaopanboonyuen/rainfall-prediction-a-machine-learning-approach).
+
+---
+
 ## 🛡️ **License**
 This project is licensed under the MIT License. For more details, see the [LICENSE](LICENSE) file.
+```
+
+This addition places the link to the code repository prominently, ensuring easy access for users.
