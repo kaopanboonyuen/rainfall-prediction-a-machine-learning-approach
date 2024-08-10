@@ -1,3 +1,11 @@
+"""
+Author: Teerapong Panboonyuen (Kao Panboonyuen)
+Project: Advanced Machine Learning Techniques for Accurate Rainfall Prediction
+Description: This script handles the training loop for the Rainfall model. It reads the configuration 
+             from a YAML file, loads the data, initializes the model, and trains it on the specified dataset.
+License: MIT License
+"""
+
 import numpy as np
 import pandas as pd
 from sklearn.ensemble import RandomForestRegressor, GradientBoostingRegressor
